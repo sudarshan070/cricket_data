@@ -12,4 +12,13 @@ router.post('/', async (req, res, next) => {
     }
 })
 
+router.get('/', async (req, res, next) => {
+    try {
+        let cricket = await Cricket.find({})
+        res.json({ cricket })
+    } catch (error) {
+        next(error)
+    }
+})
+
 module.exports = router;
