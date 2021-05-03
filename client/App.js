@@ -1,9 +1,10 @@
 import React from 'react'
+import Cricket from './components/Cricket'
 
 export default function App() {
     return (
         <div>
-            <h2> Hello</h2>
+            <Cricket/>
         </div>
     )
 }

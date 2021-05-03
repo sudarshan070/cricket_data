@@ -21,4 +21,15 @@ router.get('/', async (req, res, next) => {
     }
 })
 
+router.delete('/de', async (req, res, next) => {
+    try {
+        let cri = await Cricket.deleteMany({
+            BATTING_Tests_: "BATTING_Tests_Runs"
+        })
+        console.log(cri, "cri");
+    } catch (error) {
+        next(error)
+    }
+})
+
 module.exports = router;
