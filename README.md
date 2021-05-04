@@ -1,8 +1,24 @@
 # cricket_data
 
-In this application we check **Who is he Best?** 
+In this application we check **Who Is The Best?** 
 
-You click on the button it shown the best player-related that field.
+Click on a button, and it will show the best player in that particular field.
+
+
+### Setup
+
+```
+npm install
+```
+
+### Run
+
+```
+npm start
+```
+
+
+`http://localhost:3000/`
 
 ### Used Tech
 * React
