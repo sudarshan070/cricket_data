@@ -61,6 +61,7 @@ export default function Cricket() {
 
   useEffect(() => {
     axios.get("/cricket").then((res) => {
+      console.log(res);
       setCricketData(res.data.cricket);
     });
   }, []);
