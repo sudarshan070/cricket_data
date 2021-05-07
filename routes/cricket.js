@@ -53,7 +53,7 @@ router.get('/test', async (req, res, next) => {
 
 router.get('/', async (req, res, next) => {
     try {
-        let cricket = await Cricket.find({})
+        let cricket = await Cricket.find({ "NAME": "Sachin Tendulkar" })
         res.json({ cricket })
     } catch (error) {
         next(error)

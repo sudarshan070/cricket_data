@@ -3,8 +3,8 @@ import Cricket from './components/Cricket'
 
 export default function App() {
     return (
-        <div>
-            <Cricket/>
-        </div>
+        <>
+            <Cricket />
+        </>
     )
 }
