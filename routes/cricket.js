@@ -22,6 +22,16 @@ router.post('/odi', async (req, res, next) => {
     }
 })
 
+
+router.get('/odi', async (req, res, next) => {
+    try {
+        let odiData = await OdiData.find({})
+        res.json({ odiData })
+    } catch (error) {
+        next(error)
+    }
+})
+
 router.get('/', async (req, res, next) => {
     try {
         let cricket = await Cricket.find({})
