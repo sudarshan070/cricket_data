@@ -41,6 +41,16 @@ router.post('/test', async (req, res, next) => {
     }
 })
 
+
+router.get('/test', async (req, res, next) => {
+    try {
+        let testData = await TestData.find({})
+        res.json({ testData })
+    } catch (error) {
+        next(error)
+    }
+})
+
 router.get('/', async (req, res, next) => {
     try {
         let cricket = await Cricket.find({})
