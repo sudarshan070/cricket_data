@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function Overview({ info }) {
-  console.log(info);
   return (
     <div className="main-card ">
       {info.map((data, i) => (
@@ -46,8 +45,8 @@ export default function Overview({ info }) {
           <div className="award-team p-3 mb-3">
             <h4>Awards</h4>
             <div className="d-flex justify-content-between">
-              {JSON.parse(data.AWARDS.replace(/'/g, '"')).map((award) => (
-                <h3>{award}</h3>
+              {JSON.parse(data.AWARDS.replace(/'/g, '"')).map((award, i) => (
+                <h3 key={i}>{award}</h3>
               ))}
             </div>
           </div>
@@ -55,8 +54,8 @@ export default function Overview({ info }) {
             <h4>Teams</h4>
             <div className="d-flex justify-content-between">
               {JSON.parse(data["Major teams"].replace(/'/g, '"')).map(
-                (team) => (
-                  <h3>{team}</h3>
+                (team, i) => (
+                  <h3 key={i}>{team}</h3>
                 )
               )}
             </div>

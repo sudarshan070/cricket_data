@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import Matches from "./Matches";
 import Navbar from "./Navbar";
 import Overview from "./Overview";
+import Profile from "./Profile";
 import Records from "./Records";
 import Stats from "./Stats";
 
@@ -17,6 +18,7 @@ export default function Dashboard({ info }) {
         <Route path="/records" component={Records} />
         <Route path="/stats" component={Stats} />
         <Route path="/matches" component={Matches} />
+        <Route path="/profile" render={() => <Profile info={info} />} />
       </BrowserRouter>
     </section>
   );

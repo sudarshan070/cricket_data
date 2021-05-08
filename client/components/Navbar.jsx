@@ -16,7 +16,7 @@ export default function Navbar() {
       <NavLink to="/stats">STATS</NavLink>
       <NavLink to="/records">RECORDS</NavLink>
       <NavLink to="/matches">MATCHES</NavLink>
-      <NavLink to="/profile">Profile</NavLink>
+      <NavLink to="/profile">PROFILE</NavLink>
     </nav>
   );
 }

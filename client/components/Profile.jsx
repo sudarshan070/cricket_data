@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
 
-export default function Profile() {
-    return (
-        <div>
-            
-        </div>
-    )
+export default function Profile({ info }) {
+  console.log(info);
+  return (
+    <div className="main-card">
+      <h2>Profile</h2>
+      {info.map((data, i) => (
+        <p className="profile" key={i}>
+          {data.DESCRIPTION.slice(4, -9)}
+        </p>
+      ))}
+    </div>
+  );
 }

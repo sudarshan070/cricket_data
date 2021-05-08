@@ -17,4 +17,9 @@ router.get('/matches', function (req, res, next) {
   res.render('index', { title: 'Sachin | Matches' });
 });
 
+router.get('/profile', function (req, res, next) {
+  res.render('index', { title: 'Sachin | Profile' });
+});
+
+
 module.exports = router;

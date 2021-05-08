@@ -17,7 +17,6 @@ $black-light: #777;
 $navy: #254063;
 $black: #000;
 
-
 .aside {
   width: 25%;
   height: 95vh;
@@ -40,7 +39,7 @@ $black: #000;
   height: 95vh;
   width: 75%;
   overflow: hidden;
-  
+
   .navbar {
     background: $gray;
     padding: 0;
@@ -51,37 +50,48 @@ $black: #000;
       letter-spacing: 1.5px;
       padding: 1rem 2rem;
       box-sizing: border-box;
-      &:hover{
-          color: $black;
+      &:hover {
+        color: $black;
       }
     }
-    
+
     .active {
-        padding: .9rem 2rem;
-        border-bottom: 3px solid $navy;
-        color: $black;
+      padding: 0.9rem 2rem;
+      border-bottom: 3px solid $navy;
+      color: $black;
     }
   }
-  .main-card{
+  .main-card {
     background: $gray;
+    height: 85vh;
     margin-top: 3rem;
     border-radius: 1rem;
     padding: 2rem;
-    height: auto;
-    h4{
-      color: $black-light;
-      padding-bottom: .5rem;
+    overflow: scroll;
+
+    h2 {
+      font-size: 1.6rem;
+      padding-bottom: 0.6rem;
     }
-    h3{
+
+    h4 {
+      color: $black-light;
+      padding-bottom: 0.5rem;
+    }
+    h3 {
       color: $black;
       font-size: 1.125rem;
       font-weight: 500;
     }
-    .overview-info{
+    .overview-info {
       width: 30%;
     }
-    .award-team{
+    .award-team {
       width: 100%;
     }
   }
+}
+
+.main-card::-webkit-scrollbar {
+  display: none;
 }
