@@ -17,6 +17,7 @@ $black-light: #777;
 $navy: #254063;
 $black: #000;
 
+
 .aside {
   width: 25%;
   height: 95vh;
@@ -37,14 +38,15 @@ $black: #000;
 
 .dashboard {
   height: 95vh;
-  width: 72%;
+  width: 75%;
+  overflow: hidden;
+  
   .navbar {
     background: $gray;
     padding: 0;
     a {
       color: $black-light;
       text-decoration: none;
-      font-size: 1.125rem;
       font-weight: 600px;
       letter-spacing: 1.5px;
       padding: 1rem 2rem;
@@ -58,6 +60,28 @@ $black: #000;
         padding: .9rem 2rem;
         border-bottom: 3px solid $navy;
         color: $black;
+    }
+  }
+  .main-card{
+    background: $gray;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    height: auto;
+    h4{
+      color: $black-light;
+      padding-bottom: .5rem;
+    }
+    h3{
+      color: $black;
+      font-size: 1.125rem;
+      font-weight: 500;
+    }
+    .overview-info{
+      width: 30%;
+    }
+    .award-team{
+      width: 100%;
     }
   }
 }

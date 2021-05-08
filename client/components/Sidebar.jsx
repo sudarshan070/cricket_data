@@ -2,12 +2,11 @@ import React from "react";
 import ProfilePic from "../../public/images/profile.png";
 
 export default function Sidebar({ info }) {
-  console.log(info);
   return (
     <aside className="aside d-flex flex-column align-items-center px-2 py-5 shadow-lg">
       <img src={ProfilePic} alt="profile" />
-      {info.map((data) => (
-        <div className="px-3 pt-5">
+      {info.map((data, i) => (
+        <div key={i} className="px-3 pt-5">
           <h2>{data.NAME}</h2>
           <p>
             <small>{data.COUNTRY}</small> |{" "}

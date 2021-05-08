@@ -56,7 +56,7 @@ export default function Cricket() {
   return (
     <section className="d-flex justify-content-between p-5">
       <Sidebar info={info} />
-      <Dashboard />
+      <Dashboard info={info} />
     </section>
   );
 }
