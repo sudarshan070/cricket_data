@@ -90,6 +90,13 @@ $black: #000;
       width: 100%;
     }
   }
+  .record-card{
+    width: 48%;
+    margin-bottom: 1rem;
+    sup{
+      font-size: 1rem;
+    }
+  }
 }
 
 .main-card::-webkit-scrollbar {

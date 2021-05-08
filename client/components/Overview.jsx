@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Overview({ info }) {
   return (
-    <div className="main-card ">
+    <div className="main-card">
       {info.map((data, i) => (
         <div key={i} className="d-flex justify-content-between flex-wrap">
           <div className="overview-info p-3 mb-3 ">

@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function Profile({ info }) {
-  console.log(info);
   return (
     <div className="main-card">
       <h2>Profile</h2>
