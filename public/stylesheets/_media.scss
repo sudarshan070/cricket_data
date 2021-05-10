@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px) {
+    .m-display {
+      flex-direction: column;
+      padding: 0 !important;
+    }
+    .aside {
+      width: 100%;
+      height: auto;
+      flex-direction: row !important;
+      padding: 0 !important;
+      img {
+        width: 45%;
+      }
+      h2 {
+        font-size: 4rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+  
+    .dashboard {
+      width: 100%;
+      height: auto;
+      padding-left: 0 !important;
+      padding-top: 3rem;
+    }
+  
+  }
