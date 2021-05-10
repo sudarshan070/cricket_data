@@ -16,7 +16,7 @@ export default function Cricket() {
   }, []);
 
   return (
-    <section className="d-flex justify-content-between p-5">
+    <section className="d-flex justify-content-between p-5 m-display">
       <Sidebar info={info} />
       <Dashboard info={info} />
     </section>

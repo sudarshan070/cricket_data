@@ -6,7 +6,7 @@ export default function Sidebar({ info }) {
     <aside className="aside d-flex flex-column align-items-center px-2 py-5 shadow-lg">
       <img src={ProfilePic} alt="profile" />
       {info.map((data, i) => (
-        <div key={i} className="px-3 pt-5">
+        <div key={i} className="px-3 pt-5 m-aside">
           <h2>{data.NAME}</h2>
           <p>
             <small>{data.COUNTRY}</small> |{" "}
