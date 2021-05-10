@@ -1,26 +1,109 @@
-*, *::after, *::before{
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
-body{
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.cricket{
-    height: 100vh;
+$gray: #f1f1f1;
+$white: #fff;
+$black-light: #777;
+$navy: #254063;
+$black: #000;
+
+.aside {
+  width: 25%;
+  height: 95vh;
+  background: $navy;
+  border-radius: 1rem;
+  color: $white;
+  img {
+    width: 100%;
+  }
+  h2 {
+    font-size: 2.3rem;
+  }
+  p {
+    font-size: 1.125rem;
+    padding: 0.8rem 0;
+  }
 }
-.btn{
-    margin: 2rem;
+
+.dashboard {
+  height: 95vh;
+  width: 75%;
+  overflow: hidden;
+
+  .navbar {
+    background: $gray;
+    padding: 0;
+    a {
+      color: $black-light;
+      text-decoration: none;
+      font-weight: 600px;
+      letter-spacing: 1.5px;
+      padding: 1rem 2rem;
+      box-sizing: border-box;
+      &:hover {
+        color: $black;
+      }
+    }
+
+    .active {
+      padding: 0.9rem 2rem;
+      border-bottom: 3px solid $navy;
+      color: $black;
+    }
+  }
+  .main-card {
+    background: $gray;
+    height: 85vh;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    overflow: scroll;
+
+    h2 {
+      font-size: 1.5rem;
+      padding-bottom: 0.6rem;
+    }
+
+    h4 {
+      color: $black-light;
+      padding-bottom: 0.5rem;
+    }
+    h3 {
+      color: $black;
+      font-size: 1.125rem;
+      font-weight: 500;
+    }
+    .overview-info {
+      width: 30%;
+    }
+    .award-team {
+      width: 100%;
+    }
+  }
+  .record-card{
+    width: 48%;
+    margin-bottom: 1rem;
+    sup{
+      font-size: 1rem;
+    }
+  }
 }
-.heading{
-    position: absolute;
-    color: #fff;
-    top: 5rem;
-    font-size: 2.5rem;
+
+.main-card::-webkit-scrollbar {
+  display: none;
 }
-.modal-body{
-    text-align: center;
-    padding: 2rem 1rem;
+.canvasjs-chart-toolbar,
+.canvasjs-chart-credit{
+  display: none;
 }
+
