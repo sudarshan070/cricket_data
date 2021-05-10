@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function Matches({ info }) {
-  console.log(info);
   return (
     <div className="main-card">
       <h2>Batting Career Summary</h2>

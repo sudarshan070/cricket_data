@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function Records({ info }) {
-  console.log(info);
   return (
     <div className="main-card">
       {info.map((data, i) => (

@@ -46,7 +46,7 @@ export default function Dashboard({ info }) {
         <Navbar />
         <Route exact path="/" render={() => <Overview info={info} />} />
         <Route path="/records" render={() => <Records info={info} />} />
-        <Route path="/stats" component={Stats} />
+        <Route path="/stats" render={() => <Stats info={info} />} />
         <Route path="/matches" render={() => <Matches info={info} />} />
         <Route path="/profile" render={() => <Profile info={info} />} />
       </BrowserRouter>
