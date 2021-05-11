@@ -1,4 +1,7 @@
 @media screen and (max-width: 768px) {
+  body{
+    font-size: 12px;
+  }
     .m-display {
       flex-direction: column;
       padding: 0 !important;
@@ -12,10 +15,10 @@
         width: 45%;
       }
       h2 {
-        font-size: 4rem;
+        font-size: 2rem;
       }
       p {
-        font-size: 2rem;
+        font-size: 1rem;
       }
     }
   
@@ -24,6 +27,14 @@
       height: auto;
       padding-left: 0 !important;
       padding-top: 3rem;
+      .navbar {
+        a{
+          padding: .5rem .8rem;
+        }
+      .active{
+        padding: .6rem;
+      }
+      }
     }
   
   }
